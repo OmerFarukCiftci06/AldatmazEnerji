@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
-    <title>Aldatmaz Enerji</title>
+    <title>Aldatmaz Enerji | Yenilenebilir Enerji Çözümleri</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -22,66 +22,64 @@
       rel="stylesheet"
       href="../shared.css"
     />
-    <link
-      rel="stylesheet"
-      href="styles.css"
-    />
   </head>
   <body>
     <!-- Header Başlangıç -->
-    <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <div class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <a
-                class="navbar-brand"
-                href="../index.html"
-              >
-                <img
-                  src="../assests/AldatmazGlobalImg/AldatmazGlobal Amblem.jpg"
-                  alt="Logo"
-                  width="30"
-                  height="30"
-                  class="d-inline-block align-text-top badge"
-                />
-                <span>Aldatmaz Enerji</span>
-              </a>
-            </div>
-          </div>
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a
-                class="nav-link text-black"
-                href="../index.html"
-                >Anasayfa</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-black"
-                href="../kurumsal/index.html"
-                >Kurumsal</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-black"
-                href="../hizmetlerimiz/index.html"
-                >Hizmetlerimiz</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-black"
-                href="../iletisim/index.html"
-                ><strong>İletişim</strong></a
-              >
-            </li>
-          </ul>
+    <header class="main-header">
+      <div class="toggle-brand-container">
+        <div>
+          <button class="toggle-button">
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+          </button>
         </div>
+        <div class="brand-container">
+          <a
+            class=""
+            href="../index.html"
+          >
+            <img
+              src="../assests/AldatmazGlobalImg/AldatmazEnerji.jpg"
+              alt="Logo"
+              class=""
+            />
+            <span>AldatmazGlobal</span>
+          </a>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="../index.html">Anasayfa</a>
+          </li>
+          <li><a href="../kurumsal/index.html">Kurumsal</a></li>
+          <li><a href="../hizmetlerimiz/index.html">Hizmetlerimiz</a></li>
+          <li>
+            <a href="../iletisim/index.html"><strong>İletişim</strong></a>
+          </li>
+        </ul>
       </nav>
     </header>
+    <nav class="mobile-nav">
+      <span class="mobile-nav-exit"
+        ><button id="close-mobile-nav">X</button></span
+      >
+      <ul class="mobile-nav__items">
+        <li class="mobile-nav__item">
+          <a href="../index.html">Anasayfa</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="../kurumsal/">Kurumsal</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="../hizmetlerimiz/">Hizmetlerimiz</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="../iletisim/index.html"><strong>İletişim</strong></a>
+        </li>
+      </ul>
+    </nav>
     <!-- Header Bitiş -->
     <main>
       <div class="container mt-5 mb-5">
@@ -216,5 +214,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="../shared.js"></script>
   </body>
 </html>

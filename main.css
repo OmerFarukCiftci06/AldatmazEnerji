@@ -1,12 +1,17 @@
-.carousel-item>img{
+.carousel-item>img {
   height: 34rem;
 }
 
-.nav-link:hover
-{
+.nav-link:hover {
   color: red;
 }
 
-.card-title,.btn-primary {
+.card-title,
+.btn-primary {
   margin-left: -1rem;
+}
+
+h1 {
+  margin: 1.5rem;
+  text-align: center;
 }

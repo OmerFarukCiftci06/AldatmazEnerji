@@ -1,15 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1"
     />
-    <title>Aldatmaz Enerji</title>
+    <title>Aldatmaz Enerji | Yenilenebilir Enerji Çözümleri</title>
+    <link
+      rel="canonical"
+      href="https://www.aldatmazglobal.com"
+    />
     <meta
       name="description"
-      content="Aldatmaz Enerji - Yenilenebilir Enerji Danışmanlık Hizmetleri"
+      content="Aldatmaz Enerji, yenilenebilir enerji danışmanlık hizmetleri: Güneş, rüzgar, biyokütle projeleri, Petrol & LPG bayilik ve şarj ağı işletmeciliği çözümleri."
     />
     <link
       rel="icon"
@@ -23,6 +27,10 @@
       crossorigin="anonymous"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="shared.css"
     />
@@ -32,277 +40,285 @@
     />
   </head>
   <body>
-    <div class="backdrop"></div>
     <!-- Header Başlangıç -->
-    <header>
-      <nav class="row navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <div class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <a
-                class="navbar-brand"
-                href="index.html"
-              >
-                <img
-                  src="assests/AldatmazGlobalImg/AldatmazGlobal Amblem.jpg"
-                  alt="Logo"
-                  class="d-inline-block align-text-top badge"
-                />
-                <span>Aldatmaz Enerji</span>
-              </a>
-            </div>
-          </div>
-
-          <ul class="nav">
-            <li class="nav-item">
-              <a
-                class="nav-link text-black"
-                href="index.html"
-                ><strong>Anasayfa</strong></a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-black"
-                href="kurumsal/index.html"
-                >Kurumsal</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-black"
-                href="hizmetlerimiz/index.html"
-                >Hizmetlerimiz</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-black"
-                href="iletisim/index.html"
-                >İletişim</a
-              >
-            </li>
-          </ul>
+    <header class="main-header">
+      <div class="toggle-brand-container">
+        <div>
+          <button class="toggle-button">
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+            <span class="toggle-button__bar"></span>
+          </button>
         </div>
+        <div class="brand-container">
+          <a
+            class=""
+            href="index.html"
+          >
+            <img
+              src="../assests/AldatmazGlobalImg/AldatmazEnerji.jpg"
+              alt="Logo"
+              class=""
+              loading="lazy"
+            />
+            <span>AldatmazEnerji</span>
+          </a>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li>
+            <a href="index.html"><strong>Anasayfa</strong></a>
+          </li>
+          <li><a href="kurumsal/index.html">Kurumsal</a></li>
+          <li><a href="hizmetlerimiz/index.html">Hizmetlerimiz</a></li>
+          <li><a href="iletisim/index.html">İletişim</a></li>
+        </ul>
       </nav>
     </header>
     <nav class="mobile-nav">
+      <span class="mobile-nav-exit"
+        ><button id="close-mobile-nav">X</button></span
+      >
       <ul class="mobile-nav__items">
         <li class="mobile-nav__item">
-          <a href="packages/index.html">Packages</a>
+          <a href="index.html"><strong>Anasayfa</strong></a>
         </li>
         <li class="mobile-nav__item">
-          <a href="customers/index.html">Customers</a>
+          <a href="kurumsal/index.html">Kurumsal</a>
         </li>
-        <li class="mobile-nav__item mobile-nav__item--cta">
-          <a href="start-hosting/index.html">Start Hosting</a>
+        <li class="mobile-nav__item">
+          <a href="hizmetlerimiz/index.html">Hizmetlerimiz</a>
+        </li>
+        <li class="mobile-nav__item">
+          <a href="iletisim/index.html">İletişim</a>
         </li>
       </ul>
     </nav>
     <!-- Header Bitiş -->
-    <main>
+    <main role="main">
       <!-- Karosel Başlangıç -->
-      <div class="container mb-2 mt-2">
-        <div class="row">
-          <div class="col-sm">
-            <div
-              id="carouselExampleIndicators"
-              class="carousel slide"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="assests/AldatmazGlobalImg/Karışık.JPG"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assests/AldatmazGlobalImg/Karışık1.JPG"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="assests/AldatmazGlobalImg/Kaydırmalı(çıkarma).JPG"
-                    class="d-block w-100"
-                    alt="..."
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev"
+      <section>
+        <div class="container mb-2 mt-2">
+          <h1>Aldatmaz Enerji - Yenilenebilir Enerji Danışmanlık</h1>
+          <div class="row">
+            <div class="col-sm">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
               >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="assests/AldatmazGlobalImg/Karışık.JPG"
+                      class="d-block w-100"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assests/AldatmazGlobalImg/Karışık1.JPG"
+                      class="d-block w-100"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="assests/AldatmazGlobalImg/Kaydırmalı(çıkarma).JPG"
+                      class="d-block w-100"
+                      alt="..."
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleIndicators"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <!-- Karosel Bitiş -->
 
       <!-- Card Başlangıç-->
-      <div class="container">
-        <div class="row mb-4">
-          <div class="card col-sm">
-            <img
-              src="assests/AldatmazGlobalImg/Rüzgar1.JPG"
-              class="card-img-top card-organization w-100 img-fluid"
-              alt="RüzgarSantrali"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Rüzgar Enerjisi Proje Danışmanlığı</h5>
-              <a
-                href="hizmetlerimiz/index.html#RuzgarElec"
-                class="btn btn-primary"
-                >Rüzgar Enerjisi Proje Danışmanlığı Hakkında Detaylı Bilgi İçin
-                Tıklayınız</a
-              >
-            </div>
-          </div>
-          <div class="card col-sm">
-            <div>
+      <section>
+        <div class="container">
+          <div class="row mb-4">
+            <div class="card col-sm">
               <img
-                src="assests/AldatmazGlobalImg/Güneşş.jpg"
+                src="assests/AldatmazGlobalImg/Rüzgar1.JPG"
                 class="card-img-top card-organization w-100 img-fluid"
-                alt="GünesSantrali"
+                alt="Rüzgar Enerjisi Proje Danışmanlığı Görseli"
+                loading="lazy"
               />
+              <div class="card-body">
+                <h5 class="card-title">Rüzgar Enerjisi Proje Danışmanlığı</h5>
+                <a
+                  href="hizmetlerimiz/index.html#RuzgarElec"
+                  title="Rüzgar Enerjisi Proje Danışmanlığı Hakkında Detaylı Bilgi"
+                  class="btn btn-primary"
+                  >Rüzgar Enerjisi Proje Danışmanlığı Hakkında Detaylı Bilgi
+                  İçin Tıklayınız</a
+                >
+              </div>
             </div>
-            <div class="card-body">
-              <h5 class="card-title">Güneş Enerjisi Projesi Danışmanlığı</h5>
-              <a
-                href="hizmetlerimiz/index.html#GunesElec"
-                class="btn btn-primary"
-                >Güneş Enerjisi Projesi Danışmanlığı Hakkında Detaylı Bilgi İçin
-                Tıklayınız</a
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row mb-4">
-          <div class="card col-sm">
-            <img
-              src="assests/AldatmazGlobalImg/Hidro3.JPG"
-              class="card-img-top card-organization w-100 img-fluid"
-              alt="Hidroelektrik"
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Hidrolektrik Santral Proje Danışmanlığı
-              </h5>
-              <a
-                href="hizmetlerimiz/index.html#HidroElec"
-                class="btn btn-primary"
-                >Hidrolektrik Santral Proje Danışmanlığı Hakkında Detaylı Bilgi
-                İçin Tıklayınız</a
-              >
-            </div>
-          </div>
-          <div class="card col-sm">
-            <img
-              src="assests/AldatmazGlobalImg/Çöp atıkları.JPG"
-              class="card-img-top card-organization w-100 img-fluid"
-              alt="Biyokütle"
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Biyokütle Enerji Santral Proje Danışmanlığı
-              </h5>
-              <a
-                href="hizmetlerimiz/index.html#BiyoElec"
-                class="btn btn-primary"
-                >Biyokütle Enerji Santral Proje Danışmanlığı Hakkında Detaylı
-                Bilgi İçin Tıklayınız</a
-              >
+            <div class="card col-sm">
+              <div>
+                <img
+                  src="assests/AldatmazGlobalImg/Güneşş.jpg"
+                  class="card-img-top card-organization w-100 img-fluid"
+                  alt="Güneş Enerjisi Proje Danışmanlığı Görseli"
+                  loading="lazy"
+                />
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Güneş Enerjisi Projesi Danışmanlığı</h5>
+                <a
+                  href="hizmetlerimiz/index.html#GunesElec"
+                  class="btn btn-primary"
+                  title="Güneş Enerjisi Proje Danışmanlığı Hakkında Detaylı Bilgi"
+                  >Güneş Enerjisi Projesi Danışmanlığı Hakkında Detaylı Bilgi
+                  İçin Tıklayınız</a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <div class="row mb-4">
-          <div class="card col-sm">
-            <img
-              src="assests/AldatmazGlobalImg/Mazot.JPG"
-              class="card-img-top card-organization w-100 img-fluid"
-              alt="Akaryakıt"
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Petrol ve LPG Piyasası Bayilik Lisansı Danışmanlığı
-              </h5>
-              <a
-                href="hizmetlerimiz/index.html#PetroEnergy"
-                class="btn btn-primary"
-                >Petrol ve LPG Piyasası Bayilik Lisansı Danışmanlığı Hakkında
-                Detaylı Bilgi İçin Tıklayınız</a
-              >
+        <div class="container">
+          <div class="row mb-4">
+            <div class="card col-sm">
+              <img
+                src="assests/AldatmazGlobalImg/Hidro3.JPG"
+                class="card-img-top card-organization w-100 img-fluid"
+                alt="Hidrolektrik Enerjisi Proje Danışmanlığı Görseli"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Hidrolektrik Santral Proje Danışmanlığı
+                </h5>
+                <a
+                  href="hizmetlerimiz/index.html#HidroElec"
+                  class="btn btn-primary"
+                  title="Hidrolektrik Enerjisi Proje Danışmanlığı Hakkında Detaylı Bilgi"
+                  >Hidrolektrik Santral Proje Danışmanlığı Hakkında Detaylı
+                  Bilgi İçin Tıklayınız</a
+                >
+              </div>
             </div>
-          </div>
-          <div class="card col-sm">
-            <img
-              src="assests/AldatmazGlobalImg/Elektirik istasyon.jpeg"
-              class="card-img-top card-organization w-100 img-fluid"
-              alt="Elektrik İstasyonu"
-            />
-            <div class="card-body">
-              <h5 class="card-title">
-                Şarj Ağı İşletmeci Lisansı Süreç Danışmanlığı
-              </h5>
-              <a
-                href="hizmetlerimiz/index.html#ElecEnergy"
-                class="btn btn-primary"
-                >Şarj Ağı İşletmeci Lisansı Danışmanlığı Hakkında Detaylı Bilgi
-                İçin Tıklayınız</a
-              >
+            <div class="card col-sm">
+              <img
+                src="assests/AldatmazGlobalImg/Çöp atıkları.JPG"
+                class="card-img-top card-organization w-100 img-fluid"
+                alt="Biyokütle Enerjisi Proje Danışmanlığı Görseli"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Biyokütle Enerji Santral Proje Danışmanlığı
+                </h5>
+                <a
+                  href="hizmetlerimiz/index.html#BiyoElec"
+                  class="btn btn-primary"
+                  title="Hidrolektrik Enerjisi Proje Danışmanlığı Hakkında Detaylı Bilgi"
+                  >Biyokütle Enerji Santral Proje Danışmanlığı Hakkında Detaylı
+                  Bilgi İçin Tıklayınız</a
+                >
+              </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="container">
+          <div class="row mb-4">
+            <div class="card col-sm">
+              <img
+                src="assests/AldatmazGlobalImg/Mazot.JPG"
+                class="card-img-top card-organization w-100 img-fluid"
+                alt="Petrol ve LPG Piyasası Bayilik Lisansı Danışmanlığı Görseli"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Petrol ve LPG Piyasası Bayilik Lisansı Danışmanlığı
+                </h5>
+                <a
+                  href="hizmetlerimiz/index.html#PetroEnergy"
+                  class="btn btn-primary"
+                  title="Petrol ve LPG Piyasası Bayilik Lisansı Danışmanlığı Hakkında Detaylı Bilgi"
+                  >Petrol ve LPG Piyasası Bayilik Lisansı Danışmanlığı Hakkında
+                  Detaylı Bilgi İçin Tıklayınız</a
+                >
+              </div>
+            </div>
+            <div class="card col-sm">
+              <img
+                src="assests/AldatmazGlobalImg/Elektirik istasyon.jpeg"
+                class="card-img-top card-organization w-100 img-fluid"
+                alt="Şarj Ağı İşletmeci Lisansı Danışmanlığı Görseli"
+                loading="lazy"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Şarj Ağı İşletmeci Lisansı Süreç Danışmanlığı
+                </h5>
+                <a
+                  href="hizmetlerimiz/index.html#ElecEnergy"
+                  class="btn btn-primary"
+                  title="Şarj Ağı İşletmeci Lisansı Danışmanlığı Hakkında Detaylı Bilgi"
+                  >Şarj Ağı İşletmeci Lisansı Danışmanlığı Hakkında Detaylı
+                  Bilgi İçin Tıklayınız</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="bg-secondary-subtle">
@@ -378,5 +394,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="shared.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
